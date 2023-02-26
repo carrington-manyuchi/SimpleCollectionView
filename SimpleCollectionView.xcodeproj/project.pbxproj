@@ -13,6 +13,7 @@
 		238D9B9529AB5BB300F1AEC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238D9B9329AB5BB300F1AEC0 /* Main.storyboard */; };
 		238D9B9729AB5BB400F1AEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238D9B9629AB5BB400F1AEC0 /* Assets.xcassets */; };
 		238D9B9A29AB5BB400F1AEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238D9B9829AB5BB400F1AEC0 /* LaunchScreen.storyboard */; };
+		238D9BA229AB5E7F00F1AEC0 /* SimpleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D9BA129AB5E7F00F1AEC0 /* SimpleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		238D9B9629AB5BB400F1AEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		238D9B9929AB5BB400F1AEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		238D9B9B29AB5BB400F1AEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238D9BA129AB5E7F00F1AEC0 /* SimpleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				238D9B8D29AB5BB300F1AEC0 /* AppDelegate.swift */,
 				238D9B8F29AB5BB300F1AEC0 /* SceneDelegate.swift */,
+				238D9BA129AB5E7F00F1AEC0 /* SimpleCollectionViewCell.swift */,
 				238D9B9129AB5BB300F1AEC0 /* ViewController.swift */,
 				238D9B9329AB5BB300F1AEC0 /* Main.storyboard */,
 				238D9B9629AB5BB400F1AEC0 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				238D9B9229AB5BB300F1AEC0 /* ViewController.swift in Sources */,
 				238D9B8E29AB5BB300F1AEC0 /* AppDelegate.swift in Sources */,
+				238D9BA229AB5E7F00F1AEC0 /* SimpleCollectionViewCell.swift in Sources */,
 				238D9B9029AB5BB300F1AEC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
