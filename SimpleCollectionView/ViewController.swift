@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var movieTitle: [String] = [
+    var movieNames: [String] = [
         "Behind Enemy Lines",
         "The Shawshank ",
         "The Godfather (1972) ",
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     ]
     
     
-    var movieImage: [String] = [
+    var images: [String] = [
         "photo1", "photo2", "photo3", "photo4", "photo5", "photo7", "photo8", "photo9", "photo10","photo11"
     ]
     
@@ -37,3 +37,28 @@ class ViewController: UIViewController {
 
 }
 
+
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SimpleCollectionViewCell
+        
+        cell.imageView.image = UIImage(named: images[indexPath.row])
+        cell.titleLabel.text  = movieNames[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = (collectionView.frame.size.width-10) / 2
+        
+        return CGSize(width: size, height: size)
+    }
+    
+}
